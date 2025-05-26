@@ -96,6 +96,717 @@
 
   <script>
     const chatbotData = [
+
+      {
+    keywords: ["total objects", "number of objects", "objects count", "how many objects", "count of all objects"],
+    response: "Total objects are 133."
+  },
+  {
+    keywords: ["total custom objects", "custom objects count", "number of custom objects", "how many custom objects"],
+    response: "Total custom objects are 13."
+  },
+  {
+    keywords: ["total standard objects", "standard objects count", "number of standard objects", "how many standard objects"],
+    response: "Total standard objects are 120."
+  },
+  {
+    keywords: ["total fields", "number of fields", "fields count", "how many fields", "count of all fields"],
+    response: "Total fields are 1163."
+  },
+  {
+    keywords: ["total custom fields", "custom fields count", "number of custom fields", "how many custom fields"],
+    response: "Total custom fields are 248."
+  },
+  {
+    keywords: ["total standard fields", "standard fields count", "number of standard fields", "how many standard fields"],
+    response: "Total standard fields are 915."
+  },
+  {
+    keywords: ["total picklists", "number of picklists", "picklists count", "how many picklists", "count of all picklists"],
+    response: "Total picklists are 91."
+  },
+  {
+    keywords: ["total custom picklists", "custom picklists count", "number of custom picklists", "how many custom picklists"],
+    response: "Total custom picklists are 12."
+  },
+  {
+    keywords: ["total standard picklists", "standard picklists count", "number of standard picklists", "how many standard picklists"],
+    response: "Total standard picklists are 79."
+  },
+  {
+    keywords: ["total picklist values", "picklist values count", "number of picklist values", "how many picklist values"],
+    response: "Total picklist values are 446."
+  },
+  {
+    keywords: ["total custom picklist values", "custom picklist values count", "number of custom picklist values", "how many custom picklist values"],
+    response: "Custom picklist values are 397."
+  },
+  {
+    keywords: ["total standard picklist values", "standard picklist values count", "number of standard picklist values", "how many standard picklist values"],
+    response: "Standard picklist values are 49."
+  },
+  {
+    keywords: ["last modified date of account", "account object last modified", "account last updated", "account modification date"],
+    response: "Last modified date of the object Account is 2025, Feb 25."
+  },
+  {
+    keywords: ["last modified date of case", "case object last modified", "case last updated", "case modification date"],
+    response: "Last modified date of the object Case is 2025, Mar 08."
+  },
+  {
+    keywords: ["last modified date of committe_c", "committe_c object last modified", "committe_c last updated", "committe_c modification date"],
+    response: "Last modified date of the object Committe_c is 2023, Jul 26."
+  },
+  {
+    keywords: ["last modified date of committe_membership_c", "committe_membership_c object last modified", "committe_membership_c last updated", "committe_membership_c modification date"],
+    response: "Last modified date of the object Committe_Membership_c is 2024, Sep 23."
+  },
+  {
+    keywords: ["last modified date of contact", "contact object last modified", "contact last updated", "contact modification date"],
+    response: "Last modified date of the object Contact is 2025, Feb 25."
+  },
+  {
+    keywords: ["last modified date of membership_c", "membership_c object last modified", "membership_c last updated", "membership_c modification date"],
+    response: "Last modified date of the object Membership_c is 2024, Jul 17."
+  },
+  {
+    keywords: ["objects created in 2010", "objects created on year 2010", "how many objects created in 2010", "object count 2010"],
+    response: "Objects created in year 2010 are 2."
+  },
+  {
+    keywords: ["objects created in 2011", "objects created on year 2011", "how many objects created in 2011", "object count 2011"],
+    response: "Objects created in year 2011 are 1."
+  },
+  {
+    keywords: ["objects created in 2022", "objects created on year 2022", "how many objects created in 2022", "object count 2022"],
+    response: "Objects created in year 2022 are 1."
+  },
+  {
+    keywords: ["objects created in 2025", "objects created on year 2025", "how many objects created in 2025", "object count 2025"],
+    response: "Objects created in year 2025 are 2."
+  },
+  {
+    keywords: ["text datatype fields count", "how many text fields", "text field total", "number of text fields", "text datatype total"],
+    response: "Text datatype fields are 61."
+  },
+  {
+    keywords: ["lookup datatype fields count", "how many lookup fields", "lookup field total", "number of lookup fields", "lookup datatype total"],
+    response: "Lookup datatype fields are 193."
+  },
+  {
+    keywords: ["number datatype fields count", "how many number fields", "number field total", "number of number fields", "number datatype total"],
+    response: "Number datatype fields are 55."
+  },
+  {
+    keywords: ["checkbox datatype fields count", "how many checkbox fields", "checkbox field total", "number of checkbox fields", "checkbox datatype total"],
+    response: "Checkbox datatype fields are 37."
+  },
+  {
+    keywords: ["textarea datatype fields count", "how many textarea fields", "textarea field total", "number of textarea fields", "textarea datatype total"],
+    response: "TextArea datatype fields are 14."
+  },
+  {
+    keywords: ["datetime datatype fields count", "how many datetime fields", "datetime field total", "number of datetime fields", "datetime datatype total"],
+    response: "Datetime datatype fields are 2."
+  },
+  {
+    keywords: ["picklists in account", "how many picklists in account", "picklist count in account object", "account object picklists"],
+    response: "There are 54 picklists in the Account object."
+  },
+  {
+    keywords: ["picklists in role_c", "how many picklists in role_c", "picklist count in role_c object", "role_c object picklists"],
+    response: "There are 210 picklists in the Role_C object."
+  },
+    {
+    keywords: ["picklists in network_affiliation_c", "how many picklists in network_affiliation_c", "picklist count in network_affiliation_c object", "network_affiliation_c object picklists"],
+    response: "There are 165 picklists in the Network_Affiliation_c object."
+  },
+  {
+    keywords: ["picklists in contact", "how many picklists in contact", "picklist count in contact object", "contact object picklists"],
+    response: "There are 5 picklists in the Contact object."
+  },
+  {
+    keywords: ["picklists in crl_activity_c", "how many picklists in crl_activity_c", "picklist count in crl_activity_c object", "crl_activity_c object picklists"],
+    response: "There is 1 picklist in the CRL_Activity_c object."
+  },
+  {
+    keywords: ["picklists in membership_c", "how many picklists in membership_c", "picklist count in membership_c object", "membership_c object picklists"],
+    response: "There are 4 picklists in the Membership_c object."
+  },
+  {
+    keywords: ["fields in account", "how many fields in account", "field count in account object", "account object fields"],
+    response: "There are 84 fields in the Account object."
+  },
+  {
+    keywords: ["fields in usage_statics_c", "how many fields in usage_statics_c", "field count in usage_statics_c object", "usage_statics_c object fields"],
+    response: "There are 60 fields in the Usage_Statics_C object."
+  },
+  {
+    keywords: ["fields in socialpost", "how many fields in socialpost", "field count in socialpost object", "socialpost object fields"],
+    response: "There are 57 fields in the SocialPost object."
+  },
+  {
+    keywords: ["fields in contact", "how many fields in contact", "field count in contact object", "contact object fields"],
+    response: "There are 52 fields in the Contact object."
+  },
+  {
+    keywords: ["fields in campaign", "how many fields in campaign", "field count in campaign object", "campaign object fields"],
+    response: "There are 36 fields in the Campaign object."
+  },
+  {
+    keywords: ["fields in asset", "how many fields in asset", "field count in asset object", "asset object fields"],
+    response: "There are 31 fields in the Asset object."
+  },
+  {
+    keywords: ["fields in case", "how many fields in case", "field count in case object", "case object fields"],
+    response: "There are 29 fields in the Case object."
+  },
+  {
+    keywords: ["fields in lead", "how many fields in lead", "field count in lead object", "lead object fields"],
+    response: "There are 27 fields in the Lead object."
+  },
+  {
+    keywords: ["views with filter", "views that have filters", "filtered views", "which views are filtered"],
+    response: "The following views have filters: Active_Institutions_Voting_Only, GRN_AllInstitutions, Group_Institutions, Institutions_on_Customer_Portal, Institutions_with_Branches, Institutions_with_Multiple_Directors, Institutions_with_No_Directors, Institutions_with_No_ILLs, OhioLink_AllInstitutions, Voting_Institutions, Contacts_without_a_Role, Ideas_Last_7_Days, Memberships_Pending_Followup, CompletedTasks, OpenTasks, OverdueTasks, TodaysTasks, UnscheduledTasks, All, FY2017, X2011_usage, X2013_usage, X2014_Usage, X2015_Usage, AllUsers, Portal_Users."
+  },
+  {
+    keywords: ["page layout in account", "how many page layouts in account", "account object page layouts", "account layout count"],
+    response: "There are 62 page layouts in the Account object."
+  },
+  {
+    keywords: ["page layout in case", "how many page layouts in case", "case object page layouts", "case layout count"],
+    response: "There are 62 page layouts in the Case object."
+  },
+  {
+    keywords: ["page layout in committe_membership_c", "how many page layouts in committe_membership_c", "committe_membership_c object page layouts", "committe_membership_c layout count"],
+    response: "There are 62 page layouts in the Committe_Membership_c object."
+  },
+  {
+    keywords: ["page layout in contact", "how many page layouts in contact", "contact object page layouts", "contact layout count"],
+    response: "There are 62 page layouts in the Contact object."
+  },
+  {
+    keywords: ["page layout in committe_c", "how many page layouts in committe_c", "committe_c object page layouts", "committe_c layout count"],
+    response: "There are 2 page layouts in the Committe_c object."
+  },
+  {
+    keywords: ["record types in account", "how many record types in account", "account object record types", "account record type count"],
+    response: "There are 8 record types in the Account object."
+  },
+  {
+    keywords: ["record types in case", "how many record types in case", "case object record types", "case record type count"],
+    response: "There are 8 record types in the Case object."
+  },
+   {
+    keywords: ["record types in committe_membership_c", "how many record types in committe_membership_c", "committe_membership_c object record types", "committe_membership_c record type count"],
+    response: "There are 8 record types in the Committe_Membership_c object."
+  },
+  {
+    keywords: ["record types in contact", "how many record types in contact", "contact object record types", "contact record type count"],
+    response: "There are 8 record types in the Contact object."
+  },
+  {
+    keywords: ["record types in committe_c", "how many record types in committe_c", "committe_c object record types", "committe_c record type count"],
+    response: "There are 8 record types in the Committe_c object."
+  },
+  {
+    keywords: ["total profiles", "how many profiles are there", "profile count", "number of profiles"],
+    response: "There are 34 profiles in total."
+  },
+  {
+    keywords: ["total user privileges", "how many user privileges", "user privileges count", "number of user privileges"],
+    response: "The total number of user privileges is 894."
+  },
+  {
+    keywords: ["application privileges count", "how many application privileges", "total application privileges", "number of application privileges"],
+    response: "There are 748 application privileges defined."
+  },
+  {
+    keywords: ["class privileges count", "how many class privileges", "total class privileges", "number of class privileges"],
+    response: "The total count of class privileges is 2040."
+  },
+  {
+    keywords: ["tab privileges count", "how many tab privileges", "total tab privileges", "number of tab privileges"],
+    response: "There are 2099 tab privileges in the system."
+  },
+  {
+    keywords: ["page privileges count", "how many page privileges", "total page privileges", "number of page privileges"],
+    response: "The total number of page privileges is 1530."
+  },
+  {
+    keywords: ["total field count", "how many fields in total", "total number of fields", "field count overall"],
+    response: "There are 22.51K fields in total."
+  },
+  {
+  keywords: ["total object privileges", "object privileges count", "how many object privileges", "number of object privileges"],
+  response: "The total number of object privileges is 716."
+},
+{
+  keywords: ["total licenses", "licenses currently recorded", "how many licenses", "license count"],
+  response: "There is 1 license currently recorded."
+},
+{
+  keywords: ["class access records", "class access records count", "how many class access records", "number of class access records"],
+  response: "There are 51 class access records."
+},
+{
+  keywords: ["total permission sets", "permission sets count", "how many permission sets", "number of permission sets"],
+  response: "There is 1 permission set."
+},
+{
+  keywords: ["activated permission sets", "how many activated permission sets", "number of activated permission sets", "activated permission sets recorded"],
+  response: "There are no activated permission sets recorded."
+},
+{
+  keywords: ["permission sets require activation", "permission sets need activation", "how many permission sets require activation", "permission sets donut chart"],
+  response: "1 permission set requires activation based on the donut chart."
+},
+{
+  keywords: ["default on tabs admin profile", "admin profile default tabs", "how many tabs default on admin profile", "admin profile tab count"],
+  response: "There are 31 default-on tabs in the Admin profile."
+},
+{
+  keywords: ["profile with highest default-on tabs", "profile with most default tabs", "highest default tabs profile", "profile with 36 default tabs"],
+  response: "C - CRL Supervisor User has the highest number of default-on tabs (36 tabs)."
+},
+{
+  keywords: ["profile with exactly 33 default-on tabs", "profiles with 33 default tabs", "which profiles have 33 default tabs", "profiles having 33 default-on tabs"],
+  response: "MarketingProfile, SolutionManager, and Standard profiles each have exactly 33 default-on tabs."
+},
+{
+  keywords: ["profiles with fewer than 10 default-on tabs", "profiles with less than 10 default tabs", "which profiles have under 10 default tabs", "default tabs fewer than 10 profiles"],
+  response: "Profiles with fewer than 10 default-on tabs are: Identity User (9 tabs), Analytics Cloud Integration User (5 tabs), Analytics Cloud Security User (5 tabs), Anypoint Integration (5 tabs), Salesforce API Only System Integrations (6 tabs), and Sales Insights Integration User (6 tabs)."
+}
+,
+{
+  keywords: ["default on tabs ContractManager", "tabs default on ContractManager profile", "how many tabs default on ContractManager", "ContractManager default tabs"],
+  response: "There are 33 default-on tabs in the ContractManager profile."
+},
+{
+  keywords: ["profiles with 14 default on tabs", "profiles having 14 default tabs", "which profiles have 14 default tabs", "14 default-on tabs profiles"],
+  response: "Profiles with 14 default-on tabs are: Chatter External User, Chatter Free User, Chatter Moderator User, Customer Portal Manager Standard."
+},
+{
+  keywords: ["default on tabs C - CRL Read Only", "tabs default on C - CRL Read Only profile", "how many default tabs C - CRL Read Only", "C - CRL Read Only default tabs"],
+  response: "There are 29 default-on tabs in the C - CRL Read Only profile."
+},
+{
+  keywords: ["profiles with 12 default on tabs", "profiles having 12 default tabs", "which profiles have 12 default tabs", "12 default-on tabs profiles"],
+  response: "Profiles with exactly 12 default-on tabs are: Customer Portal Manager Custom, C - Gold Partner."
+},
+{
+  keywords: ["default on tabs StandardAul profile", "how many default tabs StandardAul", "StandardAul default tabs", "default tabs in StandardAul profile"],
+  response: "The StandardAul profile has 22 default-on tabs."
+},
+{
+  keywords: ["profiles with 15 default on tabs", "profiles having 15 default tabs", "which profiles have 15 default tabs", "15 default-on tabs profiles"],
+  response: "Profiles with exactly 15 default-on tabs are: C - CRL Portal Key Contact - No Membership, CRL Customer Portal Profile, CRL List Views Profile, Guest License User, Roles Profile."
+},
+{
+  keywords: ["profiles with only Read Privilege", "profiles that have read only privilege", "which profiles have read privilege only", "read privilege profiles"],
+  response: "Profiles with only Read Privilege are: C - CRL Portal Key Contact - No Membership, C - CRL Portal Key Contact - Standard, C - CRL Read Only, C - CRL Standard User, C - CRL Supervisor User, C - Customer Portal Manager Custom, C - Gold Partner, ContractManager, CRL List Views Profile, Customer Portal Manager Custom, Customer Portal Manager Standard, Gold Partner User, Guest License User, MarketingProfile, Office Manager, Read Only, SolutionManager, Standard."
+},
+{
+  keywords: ["profiles with All Privilege", "profiles that have all privileges", "which profiles have all privilege", "all privilege profiles"],
+  response: "Profiles with All Privilege are: Admin, C - CRL Administrator, C - CRL Standard User, Sales Insights Integration User."
+},
+{
+  keywords: ["default off tabs Admin profile", "how many default tabs off Admin profile", "Admin profile default off tabs", "number of tabs default off in Admin profile"],
+  response: "There are 10 default-off tabs in the Admin profile."
+},
+{
+  keywords: ["profiles with highest default off tabs", "profiles with 6 default off tabs", "which profiles have 6 default off tabs", "highest default off tabs profiles"],
+  response: "Profiles with the highest number of default-off tabs (6 tabs) are: ContractManager, MarketingProfile, Read Only, SolutionManager, Standard."
+},
+{
+  keywords: ["default off tabs C - CRL Administrator", "tabs default off C - CRL Administrator profile", "C - CRL Administrator default off tabs", "how many default off tabs C - CRL Administrator"],
+  response: "There are 5 default-off tabs in the C - CRL Administrator profile."
+},
+{
+  keywords: ["profiles with 3 default off tabs", "profiles having exactly 3 default off tabs", "which profiles have 3 default off tabs", "3 default off tabs profiles"],
+  response: "Profiles with exactly 3 default-off tabs are: C - CRL Standard User, C - Customer Portal Manager Custom, Customer Portal Manager Custom, Customer Portal Manager Standard, Gold Partner User, Office Manager."
+},
+{
+  keywords: ["profiles with 1 default off tab", "profiles having one default off tab", "which profiles have 1 default off tab", "1 default off tab profiles"],
+  response: "Profiles with only 1 tab marked as default-off are: C - CRL Portal Key Contact - Standard, Identity User, Salesforce API Only System Integrations."
+},
+{
+  keywords: ["default off tabs StandardAul profile", "tabs default off StandardAul", "StandardAul default off tabs", "how many tabs default off StandardAul"],
+  response: "There are 2 default-off tabs in the StandardAul profile."
+},
+{
+  keywords: ["profiles with 2 default off tabs", "profiles having 2 default off tabs", "which profiles have 2 default off tabs", "2 default off tabs profiles"],
+  response: "Profiles with exactly 2 default-off tabs are: C - CRL Portal Key Contact - No Membership, StandardAul."
+},
+{
+  keywords: ["default off tabs Gold Partner User", "tabs default off Gold Partner User", "Gold Partner User default off tabs", "how many tabs default off Gold Partner User"],
+  response: "There are 3 default-off tabs in the Gold Partner User profile."
+},
+{
+  keywords: ["profiles with 5 default off tabs", "profiles having 5 default off tabs", "which profiles have 5 default off tabs", "5 default off tabs profiles"],
+  response: "Profiles with 5 default-off tabs are: C - CRL Administrator, C - CRL Read Only, C - Gold Partner."
+},
+{
+  keywords: ["profile with 6 default off tabs CRM role", "6 default off tabs related to CRM role", "profile with 6 default off tabs and CRM role", "6 default off tabs ContractManager"],
+  response: "The profile with 6 tabs default off related to a CRM role is ContractManager."
+},
+{
+  keywords: ["hidden tabs Admin profile", "how many hidden tabs Admin profile", "Admin profile hidden tabs count", "number of hidden tabs in Admin profile"],
+  response: "There are 23 hidden tabs in the Admin profile."
+},
+{
+  keywords: ["profiles with highest hidden tabs", "profiles with 58 hidden tabs", "profiles with most hidden tabs", "highest hidden tabs profiles"],
+  response: "Profiles with the highest number of hidden tabs (58 tabs) are: Minimum Access - API Only Integrations, Minimum Access - Salesforce."
+},
+{
+  keywords: ["hidden tabs Analytics Cloud Integration User", "hidden tabs Analytics Cloud Security User", "hidden tabs Anypoint Integration", "how many hidden tabs in these profiles"],
+  response: "There are 53 hidden tabs each in Analytics Cloud Integration User, Analytics Cloud Security User, and Anypoint Integration profiles."
+},
+{
+  keywords: ["profile with 23 hidden tabs", "23 hidden tabs same as Admin", "which profile has 23 hidden tabs", "profile with same hidden tabs as Admin"],
+  response: "C - CRL Supervisor User has only 23 hidden tabs, same as Admin."
+},
+{
+  keywords: ["profiles with 25 hidden tabs", "which profiles have 25 hidden tabs", "exactly 25 hidden tabs profiles", "profiles having 25 hidden tabs"],
+  response: "Profiles with exactly 25 hidden tabs are: ContractManager, MarketingProfile, Read Only, SolutionManager, Standard."
+},
+{
+  keywords: ["hidden tabs C - CRL Administrator", "how many hidden tabs C - CRL Administrator", "tabs hidden C - CRL Administrator profile"],
+  response: "There are 24 hidden tabs in the C - CRL Administrator profile."
+},
+{
+  keywords: ["profiles with 29 hidden tabs", "which profiles have 29 hidden tabs", "29 hidden tabs profiles"],
+  response: "Profiles with exactly 29 hidden tabs are: C - CRL Read Only, Office Manager."
+},
+{
+  keywords: ["profiles with 46 hidden tabs", "which profiles have 46 hidden tabs", "46 hidden tabs profiles"],
+  response: "Profiles with exactly 46 hidden tabs are: C - CRL Portal Key Contact - No Membership, C - CRL Portal Key Contact - Standard, C - Gold Partner, CRL Customer Portal Profile, CRL List Views Profile, Customer Portal Manager Standard, Guest License User, Roles Profile."
+},
+{
+  keywords: ["profiles with 47 hidden tabs", "which profiles have 47 hidden tabs", "47 hidden tabs profiles"],
+  response: "Profiles with exactly 47 hidden tabs are: Chatter External User, Chatter Free User, Chatter Moderator User, Gold Partner User."
+},
+{
+  keywords: ["hidden tabs Identity User", "hidden tabs Salesforce API Only System Integrations", "tabs hidden Identity User profile", "tabs hidden Salesforce API Only System Integrations"],
+  response: "There are 52 hidden tabs each in Identity User and Salesforce API Only System Integrations profiles."
+},
+{
+  keywords: ["profile with lowest hidden tabs", "lowest number of hidden tabs profile", "profile with fewest hidden tabs"],
+  response: "The profiles with the lowest number of hidden tabs are Admin and C - CRL Supervisor User, both with 23 tabs each."
+},
+{
+  keywords: ["hidden tabs StandardAul profile", "how many hidden tabs StandardAul", "StandardAul hidden tabs count"],
+  response: "The StandardAul profile has 39 hidden tabs."
+},
+{
+  keywords: ["hidden tabs Customer Portal Manager Custom", "how many hidden tabs Customer Portal Manager Custom", "Customer Portal Manager Custom hidden tabs count"],
+  response: "There are 48 hidden tabs in the Customer Portal Manager Custom profile."
+},
+{
+  keywords: ["total triggers automation dashboard", "how many triggers automation dashboard", "number of triggers in automation dashboard"],
+  response: "There is 1 Trigger shown on the automation dashboard."
+},
+{
+  keywords: ["total active workflow rules", "number of active workflow rules", "active workflow rules count"],
+  response: "There are 19 active workflow rules."
+},
+{
+  keywords: ["total flows", "how many flows exist", "number of flows", "flow count"],
+  response: "There are 13 flows in total."
+},
+{
+  keywords: ["total alerts sent", "number of alerts sent", "alerts sent count"],
+  response: "A total of 4 alerts have been sent."
+},
+{
+  keywords: ["field updates count", "how many field updates", "number of field updates made"],
+  response: "There have been 18 field updates made."
+},
+{
+  keywords: ["active flows count", "number of active flows", "total active flows"],
+  response: "There are 13 active flows."
+},
+{
+  keywords: ["apex classes count", "how many apex classes", "number of apex classes"],
+  response: "There are 60 Apex Classes listed."
+},
+{
+  keywords: ["custom email templates count", "how many custom email templates", "number of custom email templates"],
+  response: "There are 4 Custom Email Templates."
+},
+{
+  keywords: ["validation rules total", "number of validation rules", "total validation rules"],
+  response: "There are 16 validation rules."
+},
+{
+  keywords: ["object with highest workflow rules", "which object has most workflow rules", "highest workflow rules object"],
+  response: "Account has the highest number of workflow rules with 10 workflow rules."
+},
+{
+  keywords: ["workflow rules Membership__c", "workflow rules Role__c", "rules count Membership__c and Role__c"],
+  response: "Membership__c and Role__c each have 3 workflow rules."
+},
+{
+  keywords: ["workflow rules Committee__c", "workflow rules Contact", "workflow rules Renewal_Period__c"],
+  response: "Committee__c, Contact, and Renewal_Period__c each have 1 workflow rule."
+},
+{
+  keywords: ["active Account workflow rules", "how many active workflow rules Account", "active workflow rules count Account"],
+  response: "There are 10 active workflow rules for Account."
+},
+{
+  keywords: ["Membership__c active inactive rules", "Role__c active inactive rules", "workflow rules status Membership__c and Role__c"],
+  response: "Membership__c has 2 active and 1 inactive rules; Role__c has 2 active and 1 inactive rules."
+},
+{
+  keywords: ["inactive rules Contact Committee__c Renewal_Period__c", "inactive workflow rules Contact Committee Renewal Period"],
+  response: "No inactive rules exist for Contact, Committee__c, or Renewal_Period__c; each has 1 active rule."
+},
+{
+  keywords: ["workflow actions Account", "number of workflow actions Account workflow"],
+  response: "There is 1 workflow action in the Account workflow."
+},
+{
+  keywords: ["workflow actions Membership_c", "workflow actions Membership_c workflow"],
+  response: "There is 1 workflow action in the Membership_c workflow."
+},
+{
+  keywords: ["workflow actions Role_c", "workflow actions Role_c workflow"],
+  response: "There are 3 workflow actions in the Role_c workflow."
+},
+{
+  keywords: ["workflow actions Renewal_Period_c", "workflow actions Renewal_Period_c workflow"],
+  response: "There are 2 workflow actions in the Renewal_Period_c workflow."
+},
+{
+  keywords: ["workflow actions Committee_c", "workflow actions Committee_c workflow"],
+  response: "There are 5 workflow actions in the Committee_c workflow."
+},
+{
+  keywords: ["workflow actions Contact", "number of workflow actions Contact workflow", "workflow actions count Contact"],
+  response: "There are 10 workflow actions in the Contact workflow."
+},
+{
+  keywords: ["workflow rules triggered on all changes", "workflow rules onAllChanges", "rules triggered all changes"],
+  response: "There are 9 workflow rules triggered on all changes."
+},
+{
+  keywords: ["workflow rules triggered on create or triggering update", "workflow rules onCreateOrTriggeringUpdate", "rules on create or update"],
+  response: "There are 5 workflow rules triggered on create or triggering update."
+},
+{
+  keywords: ["workflow rules triggered only on create", "workflow rules onCreateOnly", "rules triggered on create only"],
+  response: "There are 9 workflow rules triggered only on creation."
+},
+{
+  keywords: ["trigger type with highest workflow rules", "most workflow rules trigger type", "highest count workflow rules trigger"],
+  response: "onAllChanges and onCreateOnly both have the highest number of workflow rules with 9 each."
+},
+{
+  keywords: ["trigger type with least workflow rules", "least workflow rules trigger type", "lowest count workflow rules trigger"],
+  response: "onCreateOrTriggeringUpdate has the least number of workflow rules with 5."
+},
+{
+  keywords: ["trigger types in image", "workflow rule trigger types image", "number of trigger types represented"],
+  response: "There are three trigger types represented: onAllChanges, onCreateOrTriggeringUpdate, and onCreateOnly."
+},
+{
+  keywords: ["total workflow rules in image", "workflow rules count image", "workflow rules represented in image"],
+  response: "There are 23 workflow rules represented in the image."
+},
+{
+  keywords: ["total pages dashboard", "pages count dashboard", "dashboard total pages"],
+  response: "There are 53 total pages shown in the dashboard."
+},
+{
+  keywords: ["total Lightning pages", "number of Lightning pages", "Lightning pages count"],
+  response: "There are 8 Lightning pages."
+},
+{
+  keywords: ["total Visualforce pages", "Visualforce pages count", "number of Visualforce pages"],
+  response: "There are 45 Visualforce pages."
+},
+{
+  keywords: ["total external systems integrated", "external systems count", "number of external systems"],
+  response: "There are 6 external systems integrated."
+},
+{
+  keywords: ["total OAuth configurations", "OAuth configurations count", "number of OAuth configurations"],
+  response: "There are 12 OAuth configurations."
+},
+{
+  keywords: ["active OAuth policies", "number of active OAuth policies", "OAuth policies count"],
+  response: "There are 12 active OAuth policies."
+},
+{
+  keywords: ["total jobs recorded", "jobs count dashboard", "number of jobs in dashboard"],
+  response: "There are 21 jobs recorded in the dashboard."
+},
+{
+  keywords: ["categories external systems bar chart", "external systems categories", "external systems bar chart categories"],
+  response: "The two categories displayed are API and RefreshToken, both with a count of 6."
+},
+{
+  keywords: ["connected apps listed", "number of connected apps", "connected apps count table"],
+  response: "There are 5 connected apps listed in the table."
+},
+{
+  keywords: ["cron expression AsyncAppJob", "cron expression for AsyncAppJob", "AsyncAppJob cron expression"],
+  response: "The cron expression for AsyncAppJob is: 0 0/1 * 1/1 * ? *"
+},
+{
+  keywords: ["total jobs displayed dashboard", "jobs count dashboard", "number of jobs in dashboard"],
+  response: "There are 21 total jobs displayed in the dashboard."
+},
+{
+  keywords: ["job with most entries", "job with highest count", "most job records"],
+  response: "AsyncAppJob has the most entries with 17 job records."
+},
+{
+  keywords: ["number of job states", "job states count", "job states represented"],
+  response: "There are 5 job states represented in the dashboard."
+},
+{
+  keywords: ["jobs in IN_PROGRESS state", "number of IN_PROGRESS jobs", "jobs currently IN_PROGRESS"],
+  response: "There is 1 job currently in the 'IN_PROGRESS' state."
+},
+{
+  keywords: ["job state with lowest jobs", "lowest number of jobs by state", "least jobs in a job state"],
+  response: "The job state with the lowest number of jobs is 'IN_PROGRESS', with 1 job."
+},
+{
+  keywords: ["percentage of completed jobs", "jobs in COMPLETED state percentage", "COMPLETED jobs percent"],
+  response: "76% of jobs are in the 'COMPLETED' state (16 out of 21 jobs)."
+},
+{
+  keywords: ["percentage of queued jobs", "jobs in Queued state percentage", "Queued jobs percent"],
+  response: "4.8% of jobs are in the 'Queued' state (1 out of 21 jobs)."
+},
+{
+  keywords: ["total count of records", "total records across all objects", "records count"],
+  response: "The total count of records across all objects is 11,491."
+},
+{
+  keywords: ["average objects created per month", "monthly average object creation", "avg objects per month"],
+  response: "The average number of objects created per month is 64.20."
+},
+{
+  keywords: ["average count per year", "yearly average count", "avg count per year"],
+  response: "The average count per year is 718.19."
+},
+{
+  keywords: ["average count per quarter", "quarterly average count", "avg count per quarter"],
+  response: "The average count per quarter is 191.52."
+},
+{
+  keywords: ["highest monthly count recorded", "maximum monthly count", "highest count in a month"],
+  response: "The highest monthly count recorded is 2,851."
+},
+{
+  keywords: ["quarter with highest total count", "highest records quarter", "max records quarter"],
+  response: "The highest total count of records was observed in Quarter 4 (with approximately 2.8K count)."
+},
+{
+  keywords: ["total count in quarter 2", "records in Q2", "quarter 2 total records"],
+  response: "The total count in Quarter 2 was approximately 2.7K."
+},
+{
+  keywords: ["objects active in quarter 4", "active objects in Q4", "Q4 object activity"],
+  response: "The objects active in Quarter 4 were Account, Committee__c, and Membership__c."
+},
+{
+  keywords: ["record count for account in quarter 1", "account records Q1", "Q1 account count"],
+  response: "In Quarter 1, the approximate record count for the Account object was 1.2K."
+},
+{
+  keywords: ["quarter with least objects", "fewest contributing objects quarter", "least data contributors quarter"],
+  response: "Quarter 1 had the least number of objects contributing data, mainly Account plus one small contributor."
+},
+{
+  keywords: ["trend from quarter 1 to quarter 4", "record volume trend Q1 to Q4", "quarterly record trend"],
+  response: "There is an increasing trend in record volume from Quarter 1 to Quarter 4, with a dip in Quarter 3 and a peak in Quarter 4."
+},
+{
+  keywords: ["account records created in 2010", "2010 account record count", "account records year 2010"],
+  response: "In 2010, 111 Account records were created (sum of listed monthly counts)."
+},
+{
+  keywords: ["highest account records month 2010", "max account records month 2010", "account records peak month 2010"],
+  response: "May 2010 had the highest count of Account records created, with 31 records."
+},
+{
+  keywords: ["account records in august 2010", "aug 2010 account count", "account records month august 2010"],
+  response: "In August 2010, 7 Account records were created."
+},
+{
+  keywords: ["total user license types", "number of user license types", "useLicense table types count"],
+  response: "The total number of different user license types listed in the UseLicense table is 4."
+},
+{
+  keywords: ["user license with highest users", "license type most users", "license highest user count"],
+  response: "The user license with the highest number of users is Salesforce, with 10 users."
+},
+{
+  keywords: ["count of users with chatter free license", "chatter free users", "users using chatter free license"],
+  response: "There are 2 users with the 'Chatter Free' license."
+},
+{
+  keywords: ["users with sales insights integration user license", "sales insights integration user count"],
+  response: "There is 1 user using the 'Sales Insights Integration User' license."
+},
+{
+  keywords: ["combined users chatter free and guest user license", "chatter free plus guest user total"],
+  response: "The combined total of users with 'Chatter Free' and 'Guest User License' is 4 (2 + 2)."
+},
+{
+  keywords: ["license type at id 3", "license with id 3"],
+  response: "The license type appearing at ID 3 in the table is Salesforce."
+},
+{
+  keywords: ["license with more than 5 users", "license types with users over 5"],
+  response: "Yes, the Salesforce license type has more than 5 users."
+},
+{
+  keywords: ["total users across all license types", "sum of all users", "total user count"],
+  response: "The total number of users across all license types is 15 (1 + 2 + 10 + 2)."
+},
+{
+  keywords: ["license types with only one user", "licenses used by one user"],
+  response: "Yes, the 'Sales Insights Integration User' license is used by only one user."
+},
+{
+  keywords: ["percentage users with salesforce license", "salesforce user percentage"],
+  response: "66.67% of total users are using the Salesforce license (10 out of 15 users)."
+},
+{
+  keywords: ["total number of dashboards", "dashboard count"],
+  response: "There are 5 dashboards."
+},
+{
+  keywords: ["how many reports", "total reports", "number of reports"],
+  response: "There are 150 reports."
+},
+{
+  keywords: ["reports created in 2010", "number of reports in 2010"],
+  response: "26 reports were created in 2010."
+},
+{
+  keywords: ["dashboards created in 2010", "number of dashboards in 2010"],
+  response: "1 dashboard was created in 2010."
+},
+{
+  keywords: ["total activities", "number of activities", "activities count"],
+  response: "There are 1,132 total activities."
+},
+{
+  keywords: ["total task type activities", "task activities count"],
+  response: "There are 2 total task type activities."
+},
+{
+  keywords: ["total email type activities", "email activities count"],
+  response: "There are 1,130 total email type activities."
+}
+
     ];
 
 
@@ -121,18 +832,25 @@ function displayMessage(message, sender) {
   chatbox.appendChild(messageElem);
   chatbox.scrollTop = chatbox.scrollHeight;
 }
-
-function getBotResponse(message) {
-  const lowerMessage = message.toLowerCase();
-  for (const data of chatbotData) {
-    for (const keyword of data.keywords) {
-      if (lowerMessage.includes(keyword.toLowerCase())) {
-        return data.response;
-      }
+ function normalize(text) {
+      return text
+        .toLowerCase()
+        .split(/\s+/)
+        .map(word => word.endsWith('s') && word.length > 3 ? word.slice(0, -1) : word)
+        .join(' ');
     }
-  }
-  return "I'm not sure how to respond to that. Can you rephrase ?";
-}
+
+    function getBotResponse(message) {
+      const normalizedMsg = normalize(message);
+      for (const data of chatbotData) {
+        for (const keyword of data.keywords) {
+          if (normalizedMsg.includes(normalize(keyword))) {
+            return data.response;
+          }
+        }
+      }
+      return "I'm not sure how to respond to that. Can you rephrase ?";
+    }
 
 function clearChat() {
   document.getElementById("chatbox").innerHTML = "";
